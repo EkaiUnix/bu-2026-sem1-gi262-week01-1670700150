@@ -41,6 +41,26 @@ public class Workshop : MonoBehaviour
         {
             Debug.Log("My Number > 10");
         }
+        if (as03Number >= 10)
+        {
+            Debug.Log("My Number >= 10");
+        }
+        if (as03Number < 10)
+        {
+            Debug.Log("My Number < 10");
+        }
+        if (as03Number <= 10)
+        {
+            Debug.Log("My Number <= 10");
+        }
+        if (as03Number == 10)
+        {
+            Debug.Log("My Number == 10");
+        }
+        if (as03Number != 10)
+        {
+            Debug.Log("My Number != 10");
+        }
     }
 
     public int as04Number;
