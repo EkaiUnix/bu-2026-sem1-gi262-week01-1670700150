@@ -375,10 +375,10 @@ MonoBehaviour:
   as05RandomNumber: 11
   as06GuessingNumber: 11
   as06RandomNumber: 12
-  as07Username: 
-  as07Password: 
-  as07Age: 0
-  as07IsPaid: 0
+  as07Username: User
+  as07Password: User123
+  as07Age: 200
+  as07IsPaid: 1
 --- !u!4 &1734758268
 Transform:
   m_ObjectHideFlags: 0

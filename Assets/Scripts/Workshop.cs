@@ -11,8 +11,8 @@ public class Workshop : MonoBehaviour
         //As03_NumberComparisonExample();
         //As04_AndOrOperatorExample();
         //As05_GuessingNumberExample();
-        As06_GuessingNumberMoreOrLessExample();
-        // As07_VerifyIdentityExample();
+        //As06_GuessingNumberMoreOrLessExample();
+        As07_VerifyIdentityExample();
     }
 
     public bool isSixOClock;
@@ -114,6 +114,27 @@ public class Workshop : MonoBehaviour
     public bool as07IsPaid;
     public void As07_VerifyIdentityExample()
     {
+        if (as07Username == "User" && as07Password == "User123")
+        {
+            Debug.Log("You have accessed");
 
+            if (as07IsPaid)
+            {
+                Debug.Log("You are VIP Member");
+            }
+            else 
+            {
+                Debug.Log("You are Free Member");
+            }
+
+            if (as07Age > 18) 
+            {
+                Debug.Log("You have access to Exclusive Content");
+            }
+        }
+        else 
+        {
+            Debug.Log("You are Guest");
+        }
     }
 }
