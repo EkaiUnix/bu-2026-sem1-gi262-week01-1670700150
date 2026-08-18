@@ -373,8 +373,8 @@ MonoBehaviour:
   as04Number: 9
   as05GuessingNumber: 11
   as05RandomNumber: 11
-  as06GuessingNumber: 0
-  as06RandomNumber: 0
+  as06GuessingNumber: 11
+  as06RandomNumber: 12
   as07Username: 
   as07Password: 
   as07Age: 0
