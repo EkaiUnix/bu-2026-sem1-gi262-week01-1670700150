@@ -8,9 +8,9 @@ public class Workshop : MonoBehaviour
     {
         //As01_SyntaxIf();
         //As02_StringComparisonExample();
-         As03_NumberComparisonExample();
-        // As04_AndOrOperatorExample();
-        // As05_GuessingNumberExample();
+        //As03_NumberComparisonExample();
+        //As04_AndOrOperatorExample();
+        As05_GuessingNumberExample();
         // As06_GuessingNumberMoreOrLessExample();
         // As07_VerifyIdentityExample();
     }
@@ -66,14 +66,28 @@ public class Workshop : MonoBehaviour
     public int as04Number;
     public void As04_AndOrOperatorExample()
     {
-
+        if (as04Number > 8 && as04Number < 12) 
+        {
+            Debug.Log("My Number 8 > < 12");
+        }
+        if (as04Number > 8 || as04Number < 12)
+        {
+            Debug.Log("My Number 8 || 12");
+        }
     }
 
     public int as05GuessingNumber;
     public int as05RandomNumber;
     public void As05_GuessingNumberExample()
     {
-
+        if (as05GuessingNumber == as05RandomNumber) 
+        {
+            Debug.Log("Congratiulation");
+        }
+        else
+        {
+            Debug.Log("Try Again");
+        }
     }
 
     public int as06GuessingNumber;
