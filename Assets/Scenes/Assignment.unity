@@ -467,19 +467,19 @@ MonoBehaviour:
   as03CorrectPassword: User123
   as04Score: 75
   as05Year: 1999
-  as06Num1: 0
-  as06Op: 0
-  as06Num2: 0
-  as07Month: 0
+  as06Num1: 8
+  as06Op: 43
+  as06Num2: 2
+  as07Month: 5
   as08Quantity: 0
   as08Price: 0
   as08Payment: 0
-  as09UserChoice: 0
-  as09ComputerChoice: 0
-  as10WeaponType: 
-  as10BaseDamage: 0
-  as11Score: 0
-  as11CompletionTime: 0
+  as09UserChoice: 3
+  as09ComputerChoice: 3
+  as10WeaponType: sword
+  as10BaseDamage: 1
+  as11Score: 7000
+  as11CompletionTime: 100
 --- !u!4 &1270451329
 Transform:
   m_ObjectHideFlags: 0

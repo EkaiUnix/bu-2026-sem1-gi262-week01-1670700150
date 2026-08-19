@@ -162,6 +162,30 @@ public class Assignment : MonoBehaviour
         // Example: Debug.Log("Result: 42");
         // throw new System.NotImplementedException();
 
+        double result = 0; //ตัวแปรสำหรับเก็บผลลัพธ์ของการคำนวณ
+
+        switch (as06Op)
+        {
+            case '+': //หากเครื่องหมายเป็น + ให้ทำการบวกเลขทั้งสองตัว
+                result = as06Num1 + as06Num2;
+                break;
+
+            case '/':
+                if (as06Num2 == 0) //ตรวจสอบว่าตัวหารเป็น 0 หรือไม่ หากเป็น 0 ให้แสดงผลเป็น Error: Division by zero
+                {
+                    Debug.Log("Error: Division by zero");
+                }
+                else
+                {
+                    result = as06Num1 / as06Num2; //หากตัวหารไม่เป็น 0 ให้ทำการหารเลขทั้งสองตัว
+                }
+                break;
+
+            default: //หากเครื่องหมายไม่ตรงตามเงื่อนไขใด ๆ ให้แสดงผลเป็น Error: Invalid operator
+                Debug.Log("Error: Invalid operator, Please use +,-,*, or /.");
+                return;
+        }
+        Debug.Log($"Result: {result}"); //แสดงผลลัพธ์ของการคำนวณ
     }
 
     public int as07Month;
@@ -201,7 +225,31 @@ public class Assignment : MonoBehaviour
     public void As08_PurchasingSystemExample()
     {
         //throw new System.NotImplementedException();
-      
+
+        // ตรวจสอบสินค้าใน stock
+        if (as08Quantity <= 0)
+        {
+            Debug.Log("สินค้าหมด");
+        }
+        else
+        {
+            // กรณีมีสินค้าใน stock (as08Quantity > 0)
+            if (as08Payment >= as08Price)
+            {
+                Debug.Log("คุณได้รับสินค้าแล้ว");
+
+                // หากมีเงินทอน (as08Payment > as08Price)
+                if (as08Payment > as08Price)
+                {
+                    Debug.Log($"คุณได้รับเงินทอน {as08Payment - as08Price} บาท"); //แสดงผลเงินทอน (as08Payment - as08Price)
+                }
+            }
+            else
+            {
+                // กรณีเงินไม่พอ (as08Payment < as08Price)
+                Debug.Log("คุณมีเงินไม่พอ");
+            }
+        }
     }
 
     public int as09UserChoice;
@@ -282,9 +330,10 @@ public class Assignment : MonoBehaviour
             default: //หากอาวุธไม่ตรงตามเงื่อนไขใด ๆ ให้ตัวคูณความเสียหายเป็น 1.0
                 multiplier = 1.0;
                 break;
-            int TotolDamage = (int) (as10BaseDamage * multiplier);
-                Debug.Log(TotolDamage.ToString());
+            
         }
+        int TotalDamage = (int)(as10BaseDamage * multiplier);
+        Debug.Log(TotalDamage.ToString());
     }
 
     public int as11Score;
